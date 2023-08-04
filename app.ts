@@ -1,10 +1,7 @@
 import express, { Express, NextFunction, Request, Response } from "express";
 import { HttpError } from "http-errors";
 import { Mongoose } from "mongoose";
-<<<<<<< HEAD
-=======
 import * as dotenv from "dotenv";
->>>>>>> cd031aa (Make connection key secure)
 
 var createError = require("http-errors");
 var path = require("path");
@@ -15,8 +12,6 @@ const indexRouter = require("./routes/index");
 
 var app: Express = express();
 
-<<<<<<< HEAD
-=======
 dotenv.config();
 
 // mongodb configuration
@@ -30,7 +25,6 @@ async function main() {
 
 main().catch((err: ErrorCallback) => console.log(err));
 
->>>>>>> cd031aa (Make connection key secure)
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
