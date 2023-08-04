@@ -1,12 +1,6 @@
-import express, {
-	Errback,
-	ErrorRequestHandler,
-	Express,
-	NextFunction,
-	Request,
-	Response,
-} from "express";
+import express, { Express, NextFunction, Request, Response } from "express";
 import { HttpError } from "http-errors";
+import { Mongoose } from "mongoose";
 
 var createError = require("http-errors");
 var path = require("path");
@@ -28,6 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
 	next(createError(404));
