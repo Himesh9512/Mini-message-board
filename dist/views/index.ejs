@@ -15,9 +15,11 @@
 			<ul>
 				<% messages.map((message)=>{ %>
 				<li>
-					<h4><%= message.user %></h4>
-					<h2><%= message.text %></h2>
-					<small><%= message.added %></small>
+					<div class="info">
+						<span class="user"><%= message.user %></span>
+						<small class="date">• <%= message.added %></small>
+					</div>
+					<p class="text"><%= message.text %></p>
 				</li>
 				<% })%>
 			</ul>
