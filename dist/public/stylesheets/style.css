@@ -75,6 +75,7 @@ button {
 	border: 2px solid #fff6e0;
 	border-radius: 5px;
 	padding: 10px;
+	color: white;
 }
 
 form {
@@ -100,6 +101,13 @@ input {
 	border-radius: 5px;
 	padding-left: 10px;
 	margin-top: 3px;
+}
+
+.text {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	max-width: 100%;
 }
 
 @media (min-width: 640px) {

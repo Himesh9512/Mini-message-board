@@ -14,11 +14,23 @@
 			<form method="post" action="/new">
 				<label>
 					Username
-					<input type="text" name="username" placeholder="tony stark" required />
+					<input
+						type="text"
+						name="username"
+						minlength="2"
+						maxlength="20"
+						placeholder="tony stark"
+						required />
 				</label>
 				<label>
 					Message
-					<input type="text" name="message" placeholder="i am ironman" required />
+					<input
+						type="text"
+						name="message"
+						minlength="1"
+						maxlength="100"
+						placeholder="i am ironman"
+						required />
 				</label>
 				<button type="submit">Submit</button>
 			</form>

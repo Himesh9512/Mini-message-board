@@ -1,6 +1,4 @@
 "use strict";
-<<<<<<< HEAD
-=======
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -33,7 +31,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
->>>>>>> cd031aa (Make connection key secure)
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -46,10 +43,7 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const indexRouter = require("./routes/index");
 var app = (0, express_1.default)();
-<<<<<<< HEAD
-=======
 dotenv.config();
-console.log(process.env);
 // mongodb configuration
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
@@ -60,7 +54,6 @@ function main() {
     });
 }
 main().catch((err) => console.log(err));
->>>>>>> cd031aa (Make connection key secure)
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
